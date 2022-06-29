@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Nariman Jameel Design Hub</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">NARIMAN JAMEEL DESIGN HUB</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#MyPage">HOME</a></li>
+        <li><a href="#AboutUs">ABOUT US</a></li>
+        <li><a href="#Courses">COURSES</a></li>
+        <li><a href="#Contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Portfolio</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="imgs/digi paint1.jpg" alt="Augmented Reality" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Augmented Reality In Art and Architecture</h3>
+          <p>Create AR applications to your Revit and 3Ds Max Model using Unity and Vuforia SDK </p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="imgs/ExtendedRealityXR.jpg" alt="Extended Reality" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Extended Reality and Metaverse Architecture </h3>
+          <p>Architects in the Metaverse "live" in a digital realm, interacting with each other using Virtual
+              and Extended Reality Technologies
+          </p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="imgs/paint5.jpg" alt="Los Angeles" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Digital Painting and Sketching for Architects</h3>
+          <p>Digital Hnad drawn rendered sketches and illustrations using Adobe Photoshop and Graphical Tablet</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>ABOUT US</h3>
+  <p><em>We love Learning for Fun!</em></p>
+  <p>NJ Design Hub is an online learning program offered by architect Nariman Jameel to equip young talents across industries
+       and roles with the practical skills needed to succeed in the future of Architecture. NJ Design Hub is a three-level learning journey.
+        It begins with exploring foundational skills, then moves to applying those skills through reflection, case studies, and group activities,
+        and finally embedding new behaviors through ongoing peer and self learning, participatory approach and project based outcome.
+        Our vision is to merge Art and Architecture with computation skills and elevate experiential learning through innovative and advanced technologies that aid in developing
+        Multidiscplinary Designers.
+    </p>
+  <p><em>We Provide the following services!</em></p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Courses</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="imgs/course.jpg" class="img-circle person" alt="Course" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>We've gathered the most up-to-date list of advanced courses you can take to develop your skills</p>
+        <p>In Computational Art and Architecture Field</p>
+        <p>Blended Learning Dimension (Online+Lab)</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Events</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="imgs/event.jpg" class="img-circle person" alt="Event" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>We develop interactive online virtual events </p>
+        <p>AR  I  VR  I  XR  I 360° </p>
+        <p>let's create a fun learning experience!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Business</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="imgs/business1.jpg" class="img-circle person" alt="Business" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>We support Business to Business (B2B) & Business to Consumer (B2C) models</p>
+        <p>i.e. Content Creating, E-commerce, Digital Marketing, Product Design, and Real Estate</p>
+        <p>Let's transform data into creative, and engaging content!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">UPCOMING DATES 2022</h3>
+    <p class="text-center">limited Seats are available in the following courses<br> Remember to book your seat!</p>
+    <ul class="list-group">
+      <li class="list-group-item">21 Jun-24 Jul  I  Digital Painting and Sketching for Architects Course <span class="label label-danger">Sold Out!</span></li>
+      <li class="list-group-item">21 Aug-24 Sept I  Augmented Reality In Art and Architecture <span class="label label-danger">Sold Out!</span></li> 
+      <li class="list-group-item">21 Aug-24 Sept I  Extended Reality and Metaverse Architecture <span class="badge">4 Seats Available</span></li> 
+    </ul>
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="imgs/no need images/future-girl-virtual-reality-headset-shutterstock_1341578870.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Digital Painting and Sketching for Artists and Architects</strong></p>
+          <p> 21st June 2022</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Apply</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="imgs/digi paint1.jpg" alt="Augmented Reality" width="400" height="300">
+          <p><strong>Augmented Reality Applications for Artists and Architects</strong></p>
+          <p>21st August 2022</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Apply</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="imgs/ExtendedRealityXR.jpg" alt="San Francisco" width="400" height="300">
+          <p><strong>Extended Reality and Metaverse Architecture Course</strong></p>
+          <p>21st August 2022</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Reserve A Seat</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form" action="https://formsubmit.co/nariman.nashaat.gamil@gmail.com" method="POST">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Seat Reservation(s), $100 per seat</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send Payment Details To Email</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+          
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Mobile Number (+20) </label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter Mobile/WhatsApp Number">
+            </div>
+            <p> Confirm your email please as we will send you the course content/schedule and payment details via email. We are pleased to receive all your inquiries about the course content through WhatsApp number ( +20 114 005 2391 )</p>
+              <button type="submit" class="btn btn-block">Send 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Cairo, Egypt</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +20 1140052391</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: nariman.nashaat.gamil@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">Instructors & Team Members</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Nariman Jameel</a></li>
+    <li><a data-toggle="tab" href="#menu1">Sarah Akiel</a></li>
+    <li><a data-toggle="tab" href="#menu2">Peter Mikie</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Nariman Jameel, Founder & Instructor</h2>
+      <p>Teaching Assistant at Modern Sciences and Arts University Architecture Dept. Professional Certified from University of San Diego California (AR/VR Application Developer)</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Sarah Akiel, Co-Assistant and XR Developer</h2>
+      <p>XR Developer at EG Gate</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Peter Mikie, Instructor</h2>
+      <p>Architect and XR Developer</p>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map 
+<img src="imgs/PAGE FOOTER.jpg" class="img-responsive" style="width:100%">-->
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Sponsored by American Center in Cairo (ACC), USA Embassy, Cairo, Egypt  <a href="https://eg.usembassy.gov/education-culture/acc/" data-toggle="tooltip" title="Visit ACC">(www.eg.usembassy.gov)</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function senEmail(){
+    Email.send({
+    Host : "accwebworkshop.com",
+    Username : "Nnashaatacc@accwebworkshop.com",
+    Password : "gHw3SmeR*ldM",
+    To : 'nariman.nashaat.gamil@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Application Request: Send the courses details and Payment Info",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    
+  }
+</script> -->
+</body>
+<!-- <script src="js/script.js"></script> -->
+
+
+</html>
